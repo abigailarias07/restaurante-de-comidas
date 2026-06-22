@@ -189,3 +189,122 @@ body {
     border: 3px solid #ffffff; 
     box-shadow: 0 6px 20px rgba(0,0,0,0.2); 
 }
+
+
+/* ==========================================
+   CSS GRID: HOJA DE LA CARTA INTERACTIVA
+   ========================================== */
+
+   .menu-section {
+    background-color: #ffffff;
+    padding: 60px 40px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 80px; /* Espacio para que el header fijo no tape el título */
+}
+
+.menu-title {
+    color: #1d364e;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Contenedor central de los botones de filtro */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+/* Estilo individual de los botones */
+.filter-btn {
+    background: transparent;
+    border: 2px solid #1d364e;
+    color: #1d364e;
+    padding: 10px 25px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+/* Estado cuando pasas el mouse o el botón está seleccionado */
+.filter-btn.active, .filter-btn:hover {
+    background-color: #1d364e;
+    color: #ffffff;
+}
+
+/* REJILLA BIDIMENSIONAL (CSS GRID) */
+.menu-grid {
+    display: grid;
+    /* Crea 3 columnas de igual tamaño de manera matemática */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; /* Espacio exacto entre filas y columnas */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Tarjeta individual de cada plato */
+.menu-card {
+    background-color: #fcfcfc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* ⚠️ TRUCO PARA JAVASCRIPT: Oculta los platos que no coinciden con el filtro */
+.menu-card.hide {
+    display: none !important; 
+}
+
+/* Ajuste de la foto del plato */
+.card-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover; /* Evita que la comida se vea aplastada o estirada */
+}
+
+/* Bloque de información del plato */
+.card-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* Alineación del Nombre y el Precio en la misma línea */
+.card-header-plate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.card-header-plate h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #1d364e;
+    font-weight: bold;
+}
+
+.price {
+    color: #488089; /* Tono turquesa elegante para el precio */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Descripción del plato */
+.card-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.6;
+}

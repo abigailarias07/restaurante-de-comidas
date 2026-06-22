@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Carta - LA COCINA MARINA</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-section">
+            <a href="index.html" class="brand-logo" style="text-decoration: none;">LA COCINA MARINA</a>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html#acerca">ACERCA DE NOSOTROS</a></li>
+                <li><a href="index.html#ubicaciones">UBICACIONES</a></li>
+                <li><a href="carta.html" class="btn-menu">LA CARTA </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SECCIÓN MENÚ INTERACTIVO (CON FILTROS) -->
+    <section class="menu-section" style="margin-top: 60px;">
+        <h2 class="menu-title">NUESTRA CARTA </h2>
+
+        <!-- Botones de Filtro (data-attributes) -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="todos">TODOS</button>
+            <button class="filter-btn" data-filter="ceviches">CEVICHES</button>
+            <button class="filter-btn" data-filter="tiraditos">TIRADITOS</button>
+            <button class="filter-btn" data-filter="bebidas">BEBIDAS</button>
+        </div>
+
+        
+        <div class="menu-grid">
+            
+           
+            <div class="menu-card" data-category="ceviches">
+                <img src="assests/CEVICHE.jpg" alt="Ceviche Clásico" class="card-img">
+                <div class="card-info">
+                    <div class="card-header-plate">
+                        <h4>CEVICHE CLÁSICO</h4>
+                        <span class="price">S/ 48</span>
+                    </div>
+                    <p>Pesca del día, leche de tigre clásica, camote glaseado y choclo.</p>
+                </div>
+            </div>
+
+           
+            <div class="menu-card" data-category="tiraditos">
+                <img src="assests/TIRADITO.jpg" alt="Tiradito pequeño" class="card-img">
+                <div class="card-info">
+                    <div class="card-header-plate">
+                        <h4>TIRADITO NIKKEI</h4>
+                        <span class="price">S/ 52</span>
+                    </div>
+                    <p>Cortes finos de atún, salsa nikkei de la casa, palta y ajonjolí.</p>
+                </div>
+            </div>
+
+            <!-- Plato 3: Cebiche -->
+            <div class="menu-card" data-category="cebiches">
+                <img src="assests/ceviche_mixto.jpg" alt="Ceviche Mixto" class="card-img">
+                <div class="card-info">
+                    <div class="card-header-plate">
+                        <h4>CEVICHE MIXTO</h4>
+                        <span class="price">S/ 55</span>
+                    </div>
+                    <p>Pescado, pulpo, langostinos, ají limo, cebolla roja y canchita.</p>
+                </div>
+            </div>
+
+            <!-- Plato 4: Bebida -->
+            <div class="menu-card" data-category="bebidas">
+                <img src="assests/CHICHA.jpg" alt="Chicha Morada" class="card-img">
+                <div class="card-info">
+                    <div class="card-header-plate">
+                        <h4>CHICHA DE LA CASA</h4>
+                        <span class="price">S/ 12</span>
+                    </div>
+                    <p>Maíz morado concentrado, frutas tropicales y un toque de limón.</p>
+                </div>
+            </div>
+
+            <!-- Plato 5: Tiradito -->
+            <div class="menu-card" data-category="tiraditos">
+                <img src="assests/AMARLLO.jpg" alt="Tiradito Amarillo" class="card-img">
+                <div class="card-info">
+                    <div class="card-header-plate">
+                        <h4>TIRADITO CRIOLLO</h4>
+                        <span class="price">S/ 50</span>
+                    </div>
+                    <p>Pesca del día en crema de ají amarillo fundido, choclo y camote.</p>
+                </div>
+            </div>
+
+            <!-- Plato 6: Bebida -->
+            <div class="menu-card" data-category="bebidas">
+                <img src="assests/PISCO.jpg" alt="Pisco Sour" class="card-img">
+                <div class="card-info">
+                    <div class="card-header-plate">
+                        <h4>PISCO SOUR</h4>
+                        <span class="price">S/ 28</span>
+                    </div>
+                    <p>Nuestro trago bandera: Pisco quebranta, limón, jarabe de goma y clara.</p>
+                </div>
+            </div>
+
+        </div> <!-- Cierre de menu-grid -->
+    </section>
+
+    <!-- ENLACE AL ARCHIVO DE INTERACTIVIDAD (JAVASCRIPT) -->
+    <script src="script.js"></script>
+</body>
+</html>
