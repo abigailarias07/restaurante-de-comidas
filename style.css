@@ -1,0 +1,59 @@
+/* Estilos generales del contenedor principal */
+.main-header {
+    background-color: #538bc0; /* Azul marino oscuro */
+    display: flex;
+    justify-content: space-between; /* Envía el logo a la izquierda y el menú a la derecha */
+    align-items: center;
+    padding: 15px 40px;
+    font-family: Arial, sans-serif;
+}
+
+/* Sección del logotipo */
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.brand-logo {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: lowercase;
+    font-family:monser;
+}
+
+.country-badge {
+    background-color: #ffffff;
+    color: #202830;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+/* Sección de enlaces de navegación */
+.nav-menu ul {
+    list-style: none; /* Quita los puntos negros de la lista */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 25px; /* Separación horizontal entre enlaces */
+}
+
+.nav-menu a {
+    color: #ffffff;
+    text-decoration: none; /* Elimina el subrayado de los textos */
+    font-size: 13px;
+    letter-spacing: 1.5px; /* Espaciado entre letras */
+}
+
+/* botón de la carta  */
+.btn-menu {
+    background-color: #ffffff;
+    color: #000000 !important; 
+    padding: 12px 20px;
+    font-weight: bold;
+    border-radius: 2px;
+}
