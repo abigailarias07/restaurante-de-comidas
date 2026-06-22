@@ -6,8 +6,6 @@
     align-items: center;
     padding: 32px 40px;
     font-family: Arial, sans-serif;
-
-    /* NUEVO */
     position: fixed;
     top: 0;
     left: 0;
@@ -17,46 +15,36 @@
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
-/* NUEVO */
-body{
+body {
     margin: 0;
-    padding-top: 100px;
+    padding-top: 100px; /* Evita que el menú fijo tape el contenido inicial */
 }
 
-.country-badge {
-    background-color: #ffffff;
-    color: #2a4055;
-    padding: 4px 10px;
-    font-size: 12px;
-    font-weight: bold;
-    border-radius: 2px;
-}
 .brand-logo {
-    color: #ffffff;        /* Hace que el título sea blanco y visible */
-    font-size: 24px;       /* Tamaño de la letra */
+    color: #ffffff;        
+    font-size: 24px;       
     font-weight: bold;  
-    font-family: monserat;
+    font-family: 'Montserrat', sans-serif; /* Corregido */
 }
-
 
 /* Sección de enlaces de navegación */
 .nav-menu ul {
-    list-style: none; /* Quita los puntos negros de la lista */
+    list-style: none; 
     margin: 0;
     padding: 0;
     display: flex;
     align-items: center;
-    gap: 25px; /* Separación horizontal entre enlaces */
+    gap: 25px; 
 }
 
 .nav-menu a {
     color: #ffffff;
-    text-decoration: none; /* Elimina el subrayado de los textos */
+    text-decoration: none; 
     font-size: 15px;
-    letter-spacing: 1.6px; /* Espaciado entre letras */
+    letter-spacing: 1.6px; 
 }
 
-/* botón de la carta  */
+/* Botón de la carta */
 .btn-menu {
     background-color: #ffffff;
     color: #000000 !important; 
@@ -65,78 +53,80 @@ body{
     border-radius: 2px;
 }
 
-/*imagen del fondo*/
-
+/* Imagen de fondo principal */
 .hero-section {
     width: 100%;
     height: 60vh;
-    
-    background-image: url("assests/imagen_restaurante.webp"); 
-    
+    background-image: url("assests/imagen_restaurante.webp"); /* Corregido */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-/*SECCION ACERCA DE NOSOTROS*/
-
-/* Contenedor principal de la sección */
+/* SECCION ACERCA DE NOSOTROS */
 .about-section {
-    background-color: #ffffff; /* Un gris muy claro o blanco hueso de fondo */
+    background-color: #ffffff; 
     display: flex;
-    justify-content: center;   /* Centra horizontalmente el contenido */
-    align-items: center;       /* Centra verticalmente el texto con la foto */
-    gap: 80px;                 /* Crea la separación intermedia entre texto y foto */
+    justify-content: center;   
+    align-items: center;       
+    gap: 80px;                 
     padding: 100px 40px;      
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Columna del Texto */
 .about-text {
-    max-width: 450px;          /* Limita el ancho del texto para que no se estire demasiado */
-    color: #000000;            /* Color del texto gris oscuro elegante */
+    max-width: 450px;          
+    color: #000000;            
 }
 
 .about-text h2 {
     font-size: 26px;
     font-weight: 600;
     letter-spacing: 1.5px;
-    margin-bottom: 25px;       /* Separa el título del párrafo */
+    margin-bottom: 25px;       
 }
 
 .about-text p {
     font-size: 18px;
-    line-height: 1.8;          /* Separa las líneas de texto para que sea fácil de leer */
+    line-height: 1.8;          
     letter-spacing: 0.9px;
     margin-bottom: 20px;       
 }
 
-/* Columna de la Imagen */
 .about-image-container {
     max-width: 450px;   
 }     
 
 .about-img {
-    width: 100%;               /* Se adapta al tamaño de su contenedor */
-    height: auto;              /* Mantiene la proporción original de la foto sin deformarla */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Sutil sombra suave en los bordes como en el diseño */
+    width: 100%;               
+    height: auto;              
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
 }
 
-/*SECCON UBICACIONES*/
-
+/* SECCION UBICACIONES */
 .locations-section {
-    background-color: #488089; /* <--- El mismo azul de tu header */
+    background-color: #488089; 
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: flex-start; /* Corregido */
     font-family: 'Montserrat', sans-serif;
+    padding: 60px 40px;
 }
+
 .locations-content {
     flex: 1;                        
-    padding: 60px 40px 40px 80px;   
+    padding: 40px 40px 40px 80px;   
     display: flex;
     flex-direction: column;
     color: #ffffff !important;
+}
+
+.locations-title {
+    color: #ffffff !important;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 40px;
 }
 
 .region-col h3 {
@@ -146,22 +136,56 @@ body{
     font-weight: bold; 
 }
 
-
 .region-col li {
-    margin-bottom: 15px;            /* Separación vertical entre ciudades */
-    color: #ffffff;                 /* Color de texto negro */
+    margin-bottom: 15px;            
+    color: #ffffff;                 
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 1px;
 }
 
-/* Estilo para el texto inferior de volver al inicio */
 .back-home-text {
     color: #ffffff;
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 1px;
-    margin-top: auto;               /* Lo empuja automáticamente al fondo */
+    margin-top: 40px;               
 }
 
-/*imagenes de las ubicacion */
+/* 1. Fuerza a que Lima, Loreto y Cusco se acomoden uno al lado del otro */
+.regions-grid {
+    display: flex;
+    flex-direction: row;    
+    gap: 50px;              
+    margin-bottom: 40px;        
+}
+
+/* 2. Quita los puntos negros de las listas de ciudades */
+.region-col ul {
+    list-style: none;       
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+    gap: 12px;              
+}
+
+/* 3. Contenedor vertical para la columna de fotos de la derecha */
+.locations-gallery {
+    display: flex;
+    flex-direction: column; 
+    gap: 25px;              
+    width: 300px;           
+    align-items: center;    
+    padding-top: 40px;      
+}
+
+/* 4. Transforma tus fotos en círculos perfectos */
+.gallery-img {
+    width: 180px;           
+    height: 180px;          
+    border-radius: 50%;     
+    object-fit: cover;      
+    border: 3px solid #ffffff; 
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2); 
+}
