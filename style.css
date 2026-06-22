@@ -106,3 +106,45 @@
     height: auto;              /* Mantiene la proporción original de la foto sin deformarla */
     box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Sutil sombra suave en los bordes como en el diseño */
 }
+
+/*SECCON UBICACIONES*/
+
+.locations-section {
+    background-color: #488089; /* <--- El mismo azul de tu header */
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    font-family: 'Montserrat', sans-serif;
+}
+.locations-content {
+    flex: 1;                        
+    padding: 60px 40px 40px 80px;   
+    display: flex;
+    flex-direction: column;
+    color: #ffffff !important;
+}
+
+.region-col h3 {
+    color: #ffffff; 
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: bold; 
+}
+
+
+.region-col li {
+    margin-bottom: 15px;            /* Separación vertical entre ciudades */
+    color: #ffffff;                 /* Color de texto negro */
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Estilo para el texto inferior de volver al inicio */
+.back-home-text {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: auto;               /* Lo empuja automáticamente al fondo */
+}
