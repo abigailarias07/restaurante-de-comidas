@@ -2,7 +2,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     
     // 1. SELECCIÓN DE ELEMENTOS DEL DOM
-    // Captura todos los botones de filtro y todas las tarjetas de los platos
     const botonesFiltro = document.querySelectorAll(".filter-btn");
     const tarjetasPlatos = document.querySelectorAll(".menu-card");
 
